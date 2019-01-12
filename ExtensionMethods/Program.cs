@@ -1,12 +1,17 @@
 ﻿using System;
+using ExtensionMethods;
 
-namespace ExtensionMethods
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+
+        int i = 10;
+
+        bool result = i.IsGreaterThan(100);
+
+        Console.Write(result);
+        Console.ReadKey();
     }
 }
+
